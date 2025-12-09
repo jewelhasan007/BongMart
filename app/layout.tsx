@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/ui/Footer";
+import Header from "@/components/ui/Header";
+
 
 export const metadata: Metadata = {
   title: {
@@ -18,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-poppins antialiased">
+        <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
