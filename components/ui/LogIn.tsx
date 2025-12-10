@@ -2,9 +2,10 @@ import React from 'react';
 
 const LogIn = () => {
     return (
-        <div>
+        <button className='text-sm font-semibold 
+        hover:text-darkColor text-lightColor hover:cursor-pointer hoverEffect'>
             Login
-        </div>
+        </button>
     );
 };
 
