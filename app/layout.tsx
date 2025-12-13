@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
+import {ClerkProvider} from "@clerk/nextjs"
 
 
 export const metadata: Metadata = {
@@ -19,12 +20,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <ClerkProvider>
+
+      <html lang="en">
       <body className="font-poppins antialiased">
         <Header></Header>
         {children}
         <Footer></Footer>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
