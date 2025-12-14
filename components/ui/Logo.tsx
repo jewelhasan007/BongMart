@@ -18,7 +18,7 @@ const Logo: FC<LogoProps> = ({className, spanDesign}:{className?: string, spanDe
           className
         )}
       >
-        Shopcar
+        BongMar
         <span
           className={cn(
             "text-shop_light_green group-hover:text-shop_dark_green hoverEffect",
