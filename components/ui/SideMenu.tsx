@@ -27,12 +27,12 @@ const SideMenu : FC<SidebarProps> = ({isOpen, onClose}) => {
       >
         <div className="flex items-center justify-between gap-5">
           <Logo className="text-white" spanDesign="group-hover:text-white" />
-          <button
+          <a
             onClick={onClose}
             className="hover:text-shop_light_green hoverEffect"
           >
             <X />
-          </button>
+          </a>
         </div>
 
         <div className="flex flex-col space-y-3.5 font-semibold tracking-wide">
