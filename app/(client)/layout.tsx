@@ -21,16 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-
-      
    <div className="flex flex-col min-h-screen">
          <Header></Header>
-    <main className="flex-1">
-          {children}
-    </main>
+    <main className="flex-1">{children}</main>
         <Footer></Footer>
    </div>
-   
     </ClerkProvider>
   );
 }
