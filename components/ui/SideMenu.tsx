@@ -4,7 +4,7 @@ import Logo from './Logo';
 import { X } from 'lucide-react';
 import { headerData } from '@/constants/data';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+import { useParams, usePathname } from 'next/navigation';
 import SocialMedia from './SocialMedia';
 import { useOutSideClick } from '@/hooks';
 interface SidebarProps{
@@ -13,7 +13,8 @@ interface SidebarProps{
 }
 
 const SideMenu : FC<SidebarProps> = ({isOpen, onClose}) => {
-    const pathname = useParams();
+    // const pathname = useParams();
+    const pathname = usePathname()
     const sidebarRef = useOutSideClick<HTMLDivElement>(onClose)
     return (
       <div
