@@ -17,6 +17,7 @@
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.22.0",
     "class-variance-authority": "^0.7.1",
+    "clerk": "^0.8.3",
     "clsx": "^2.1.1",
     "daisyui": "^5.5.8",
     "lucide-react": "^0.556.0",
