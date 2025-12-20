@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Container from './Container';
 import Logo from './Logo';
 import HeaderMenu from './HeaderMenu';
@@ -8,7 +8,7 @@ import FavoriteButton from './FavoriteButton';
 import LogIn from './LogIn';
 import MobileMenu from './MobileMenu';
 import { currentUser } from '@clerk/nextjs/server';
-import { ClerkLoaded, SignedIn, SignIn, UserButton } from '@clerk/nextjs';
+import { ClerkLoaded, SignedIn,  UserButton } from '@clerk/nextjs';
 
 
 const Header = async() => {

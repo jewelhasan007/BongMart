@@ -1,6 +1,6 @@
-import { HeartIcon, ShoppingBag } from 'lucide-react';
+import { HeartIcon } from 'lucide-react';
 import Link from 'next/link';
-import React from 'react';
+
 
 const FavoriteButton = () => {
     return (

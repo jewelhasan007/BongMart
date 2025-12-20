@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Container from './Container';
 import FooterTop from './FooterTop';
 import Logo from './Logo';
@@ -8,7 +8,7 @@ import { categoriesData, quickLinksData } from '@/constants/data';
 import Link from 'next/link';
 import { Input } from './input';
 import { Button } from './button';
-import { Form } from './form';
+
 
 const Footer = () => {
     return (
